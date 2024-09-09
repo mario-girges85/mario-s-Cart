@@ -114,6 +114,14 @@ function App() {
     return itemscount;
   }
 
+  //Delete all cart
+  function deleteallfun() {
+    let newproducts = products.map((product) => {
+      remove(product.id);
+      return product;
+    });
+    setProduct(newproducts);
+  }
   return (
     <div>
       <Navbar
@@ -128,10 +136,12 @@ function App() {
         itemscountfun={itemscountfun}
       />
       <Allitemts
+        itemscountfun={itemscountfun}
         remove={remove}
         decrement={decrement}
         increment={increment}
         itemsFromApp={products}
+        deleteallfun={deleteallfun}
       />
     </div>
   );
