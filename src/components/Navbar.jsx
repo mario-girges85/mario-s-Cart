@@ -7,6 +7,7 @@ const Navbar = ({ itemscountfun, totalpricefunction }) => {
         <div className="flex-1">
           <a className="btn btn-ghost text-xl">Mario's Cart</a>
         </div>
+        <button className="btn btn-active btn-neutral">Day / Night</button>
         <div className="flex-none">
           <div className="dropdown dropdown-end">
             <div

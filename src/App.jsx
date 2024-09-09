@@ -122,6 +122,7 @@ function App() {
     });
     setProduct(newproducts);
   }
+
   return (
     <div>
       <Navbar
